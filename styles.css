@@ -1,0 +1,152 @@
+/* Resetting some default styles for better consistency */
+html{
+    height: 100%;
+    background:linear-gradient(#9198e5, #ba9f9f);
+}
+
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    font-size: 2em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+nav {
+    overflow: hidden;
+    display: flex; 
+    justify-content: space-around; 
+    border-bottom: 1px solid white;
+}
+
+nav a {
+    float: left;
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #bea5a5;
+}
+
+main {
+    padding: 20px;
+    margin: 0 auto;
+}
+
+main > h2 {
+    font-family: cursive;
+    font-size: 2em;
+    margin-top: 20px;
+    text-align: center;
+}
+
+main > p {
+    border: dashed 3px;
+    margin: 20px;
+    padding: 1em;
+
+}
+img {
+    border-radius: 3em;
+    width: 30em;
+    align-content: center;
+
+}
+.about h4 {
+    font-family: cursive;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.about p {
+    margin-top: 0;
+    line-height: 1.5;
+}
+#text1 {
+    text-align: center;
+    display:flex;
+    margin: 50px
+}
+#text2 {
+    text-align: left;
+    display:flex;
+    margin: 50px
+}
+#text3 {
+    text-align: center;
+    display:flex;
+    margin: 50px
+}
+.about p{
+    align-self:center;
+    margin: 5%;
+}
+#more > h1{
+    display: flex;
+    justify-content: center;
+    border-bottom: dashed white 1.5px;
+
+}
+
+
+
+/* Responsive Design using Media Queries */
+@media screen and (max-width: 768px) {
+
+    nav {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        align-items: center; /* Center items vertically */
+    }
+
+    nav a {
+        width: 100%; /* Make the links full-width on smaller screens */
+    }
+
+    main {
+        padding: 10px;
+    
+    }
+    
+    #rows {
+        margin: 20px;
+    }
+    
+    img {
+        max-width: 100%;
+        height: auto;
+        align-content: center;
+    }
+    
+    #text1 {
+        text-align: center;
+        display: inline;
+    }
+    #text2 {
+        text-align: center;
+        display: inline;
+    }
+    #text3 {
+        text-align: center;
+        display: inline;
+    }
+    
+    
+    .about p {
+        margin-top: 0;
+        line-height: 1.5;
+    }
+    #more{
+        align-self: center;
+    }
+}
